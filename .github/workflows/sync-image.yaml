@@ -24,11 +24,5 @@ jobs:
       - name: install kubeadm
         run: sudo apt-get install -y kubeadm=${{ env.KubernetesVersion }}-00
 
-      - name: Login in dockerhub
-        uses: docker/login-action@28218f9b04b4f3f62068d7b6ce6ca5b26e35336c
-        with:
-          username: ${{ secrets.NAME }}
-          password: ${{ secrets.PASSWORD }}
-
       - name: publish kubernetes images
         run: chmod +x ./app && ./app -v 2 --kubernetes-version v${{ env.KubernetesVersion }}

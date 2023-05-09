@@ -6,7 +6,7 @@
 ![image](https://user-images.githubusercontent.com/132827062/236986958-441a2f4b-b631-4786-99d9-f1f72a647533.png)
 推送pr
 ![image](https://user-images.githubusercontent.com/132827062/236988576-d141621d-8f82-42a1-b271-20099bdef446.png)
-CI 过程（点击 `Details` 查看 CI 详细过程
+CI 过程（点击 `Details` 查看 CI 详细过程）
 ![image](https://user-images.githubusercontent.com/132827062/236990461-5c15d6b9-be26-40f7-b8e8-20ab0540f6c0.png)
 CI 过程无异常
 ![image](https://user-images.githubusercontent.com/132827062/236988927-7b4a302d-5a5f-4d3b-8159-4f180aeef0bd.png)

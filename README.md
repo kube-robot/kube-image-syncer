@@ -1,5 +1,12 @@
-# kube-image-syncer
-# 上传 kubernetes 版本镜像
+# kube-image-syncer Overview
+## 机器人特性
+1.  支持 kubernetes 指定版本镜像自动同步
+2.  支持任意镜像列表自动同步
+
+## 技术分享
+- [bilibili](https://www.bilibili.com/video/BV1XM4y1773u/?spm_id_from=333.999.0.0&vd_source=25a0f959130bc36000c91cfe0e698400) B站视频教程
+
+# 支持 kubernetes 指定版本镜像自动同步
 将  `push_kubernetes: false` 中的 `false` 修改为`true`，例如 `push_kubernetes: true`
 <br>
 将  `version: v1.23.6` 中的版本号修改为想要拉取的版本，例如 `version: v1.23.8`
@@ -24,7 +31,7 @@ CI 过程无异常
 ![image](https://user-images.githubusercontent.com/132827062/236989963-8c586083-1869-40a4-9fc0-b6f6518ab729.png)
 ![image](https://user-images.githubusercontent.com/132827062/236990039-03d7af68-84ce-4cd8-8aec-7774cef3d5a5.png)
 
-# 上传其他镜像
+# 支持任意镜像列表自动同步
 将  `push_images: false` 中的 `false` 修改为`true`，例如 `push_images: true`
 <br>
 将想要上传的镜写在这个列表下

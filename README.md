@@ -1,6 +1,6 @@
 # kube-image-syncer
 ## 1、修改 .github/workflows/sync-image.yaml 文件
-将  `version: v1.23.6` 中的版本号修改为想要拉取的版本，例如 `version: v1.23.8` 
+将  `version: v1.23.6` 中的版本号修改为想要拉取的版本，例如 `version: v1.23.8`; 
 将  `push_kubernetes: false` 中的 `false` 修改为`true`，例如 `push_kubernetes: true`
 ## 2、创建新的分支（按照步骤操作）
 ![image](https://user-images.githubusercontent.com/132827062/236986745-8cc7ce86-a995-4db9-8ca4-add4707374f1.png)

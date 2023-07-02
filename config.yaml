@@ -6,4 +6,4 @@ kubernetes:
   version: v1.23.6
 
 images:
-  - redis:latest
+  - docker.io/redis:latest

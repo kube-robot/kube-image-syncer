@@ -1,14 +1,13 @@
 # kube-image-syncer
-## 1、修改 .github/workflows/sync-image.yaml 文件
 # 上传 kubernetes 版本镜像
 将  `push_kubernetes: false` 中的 `false` 修改为`true`，例如 `push_kubernetes: true`
 <br>
 将  `version: v1.23.6` 中的版本号修改为想要拉取的版本，例如 `version: v1.23.8`
-## 2、创建新的分支（按照步骤操作）
+## 创建新的分支（按照步骤操作）
 <img width="1075" alt="image" src="https://github.com/kube-robot/kube-image-syncer/assets/132827062/269b74f1-3430-4573-bbd9-7f9f23f5b4aa">
 <img width="748" alt="image" src="https://github.com/kube-robot/kube-image-syncer/assets/132827062/3e1237d5-1d08-4217-9ebb-29b52e5a106b">
 
-## 3、推送pr
+## 推送pr
 <img width="1398" alt="image" src="https://github.com/kube-robot/kube-image-syncer/assets/132827062/2be623d2-d45e-4494-a577-1b6684657f9b">
 
 
@@ -18,7 +17,7 @@ CI 过程（点击 `Details` 查看 CI 详细过程）
 CI 过程无异常
 <img width="1413" alt="image" src="https://github.com/kube-robot/kube-image-syncer/assets/132827062/6b93cbaa-d2ab-4492-8bf6-260371351f8b">
 
-## 3、在 dockerhub 中查看刚刚推送的镜像
+## 在 dockerhub 中查看刚刚推送的镜像
 在 `dockerhub` 中搜索 `pixiuio` 
 ![image](https://user-images.githubusercontent.com/132827062/236989636-d84bd9d2-6709-4a6e-b808-7f70dd98d9de.png)
 找到 `pixiuio/kube-apiserver` 进去查看刚才推送的镜像

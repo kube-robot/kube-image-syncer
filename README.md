@@ -6,6 +6,9 @@
 ## 技术分享
 - [bilibili](https://www.bilibili.com/video/BV1XM4y1773u/?spm_id_from=333.999.0.0&vd_source=25a0f959130bc36000c91cfe0e698400) B站视频教程
 
+## 交流沟通
+- 搜索微信号 swm0908kx, 备注（image）, 验证通过会加入群聊
+
 ## 一、kubernetes 指定版本镜像自动同步
 ### 1、修改 config.yaml
 将  `push_kubernetes: false` 中的 `false` 修改为`true`，例如 `push_kubernetes: true`

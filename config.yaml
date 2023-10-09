@@ -6,4 +6,4 @@ kubernetes:
   version: v1.23.6
 
 images:
-  - registry.k8s.io/sig-storage/snapshot-controller:v6.2.1
+  - gcr.io/kubebuilder/kube-rbac-proxy:v0.14.1

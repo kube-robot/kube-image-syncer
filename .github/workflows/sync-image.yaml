@@ -1,7 +1,4 @@
-name: push kubernetes images
-
-env:
-  KubernetesVersion: 1.26.4
+name: run push images
 
 on:
   pull_request:
@@ -17,18 +14,9 @@ jobs:
       - name: install kubernetes repo
         run: sudo apt-get update &&
              sudo apt-get install -y apt-transport-https ca-certificates curl &&
-             sudo curl -fsSLo /etc/apt/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg &&
+             curl -fsSL https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-archive-keyring.gpg &&
              echo "deb [signed-by=/etc/apt/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list &&
              sudo apt-get update
 
-      - name: install kubeadm
-        run: sudo apt-get install -y kubeadm=${{ env.KubernetesVersion }}-00
-
-      - name: Login in dockerhub
-        uses: docker/login-action@28218f9b04b4f3f62068d7b6ce6ca5b26e35336c
-        with:
-          username: ${{ secrets.NAME }}
-          password: ${{ secrets.PASSWORD }}
-
       - name: publish kubernetes images
-        run: chmod +x ./app && ./app -v 2 --kubernetes-version v${{ env.KubernetesVersion }}
+        run: chmod +x ./app && ./app -v 2

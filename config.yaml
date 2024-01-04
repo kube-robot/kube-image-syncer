@@ -6,8 +6,8 @@ kubernetes:
   version: v1.23.6
 
 images:
-  - gcr.io/tekton-releases/github.com/tektoncd/operator/cmd/kubernetes/proxy-webhook:v0.68.1@sha256:043c3ae157ae389b91e429f70df9788f12a80b5d47c756ffff00e420ef9affbb
-  - gcr.io/tekton-releases/dogfooding/tkn@sha256:64886334a4fd2a9fef496e83e248d66159c05691abb66bf5e6887ba3845f61d8
-  - gcr.io/tekton-releases/github.com/tektoncd/operator/cmd/kubernetes/operator:v0.68.1@sha256:ff84e41f326537aa8ef79976e707c6974910455700b30f2f4c05d7cc100ba557
-  - gcr.io/tekton-releases/github.com/tektoncd/operator/cmd/kubernetes/operator:v0.68.1@sha256:ff84e41f326537aa8ef79976e707c6974910455700b30f2f4c05d7cc100ba557
-  - gcr.io/tekton-releases/github.com/tektoncd/operator/cmd/kubernetes/webhook:v0.68.1@sha256:7a015c6f820e29fd0a4627e21c16d5111da48086fe43df1d7e6673c7216fd700
+  - gcr.io/tekton-releases/github.com/tektoncd/operator/cmd/kubernetes/proxy-webhook:v0.68.1
+  - gcr.io/tekton-releases/dogfooding/tkn
+  - gcr.io/tekton-releases/github.com/tektoncd/operator/cmd/kubernetes/operator:v0.68.1
+  - gcr.io/tekton-releases/github.com/tektoncd/operator/cmd/kubernetes/operator:v0.68.1
+  - gcr.io/tekton-releases/github.com/tektoncd/operator/cmd/kubernetes/webhook:v0.68.1

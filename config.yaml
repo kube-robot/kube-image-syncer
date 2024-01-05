@@ -6,15 +6,7 @@ kubernetes:
   version: v1.23.6
 
 images:
-  - gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/controller:v0.43.2
-  - gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/kubeconfigwriter:v0.43.2 
-  - gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/git-init:v0.43.2
-  - gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/entrypoint:v0.43.2
-  - gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/nop:v0.43.2
-  - gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/sidecarlogresults:v0.43.2
-  - gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/imagedigestexporter:v0.43.2
-  - gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/pullrequest-init:v0.43.2
-  - gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/workingdirinit:v0.43.2
-  - gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/webhook:v0.43.2
-  - gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/resolvers:v0.43.2
+  - gcr.io/tekton-releases/github.com/tektoncd/triggers/cmd/webhook:v0.22.1
+  - gcr.io/tekton-releases/github.com/tektoncd/triggers/cmd/controller:v0.22.1
+  - gcr.io/tekton-releases/github.com/tektoncd/triggers/cmd/eventlistenersink:v0.22.1
   

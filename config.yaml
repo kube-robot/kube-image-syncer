@@ -6,5 +6,4 @@ kubernetes:
   version: v1.23.6
 
 images:
-  - gcr.io/tekton-releases/github.com/tektoncd/triggers/cmd/interceptors:v0.22.1
-  - gcr.io/tekton-releases/github.com/tektoncd/dashboard/cmd/dashboard:v0.31.0
+  - gcr.io/tekton-releases/github.com/tektoncd/dashboard/cmd/dashboard:v0.42.0

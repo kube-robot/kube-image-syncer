@@ -6,4 +6,4 @@ kubernetes:
   version: v1.23.6
 
 images:
-  - registry.k8s.io/kube-state-metrics
+  - europe-west2-docker.pkg.dev/v2/k8s-artifacts-prod/images/kube-state-metrics/kube-state-metrics/manifests/v2.10.1

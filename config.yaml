@@ -6,4 +6,4 @@ kubernetes:
   version: v1.23.6
 
 images:
-  - registry.k8s.io/kube-state-metrics/kube-state-metrics:v2.10.1
+  - srxh0796/cri:v0.3.10

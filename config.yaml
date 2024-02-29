@@ -6,4 +6,4 @@ kubernetes:
   version: v1.23.6
 
 images:
-  - srxh0796/cri:v0.3.10
+  - srxh0796/cri-dockerd:v0.3.10

@@ -1,23 +1,10 @@
 default:
-  push_kubernetes: true
-  push_images: true
+  push_kubernetes: false
+  push_images: false
 
 kubernetes:
   version: v1.23.6
-  version: v1.27.15
+
 
 images:
   - docker.io/nginx:latest
-  - quay.io/minio/minio:latest
-  - quay.io/prometheus/prometheus:v2.36.1
-  - grafana/grafana:8.5.5
-  - quay.io/prometheus-operator/prometheus-config-reloader:v0.57.0
-  - quay.io/prometheus-operator/prometheus-operator:v0.57.0
-  - quay.io/prometheus/blackbox-exporter:v0.21.0
-  - quay.io/brancz/kube-rbac-proxy:v0.12.0
-  - quay.io/prometheus/alertmanager:v0.24.0
-  - quay.io/prometheus/node-exporter:v1.3.1
-  - easzlab/k8s-dns-node-cache:1.21.1
-  - coredns/coredns:1.8.6
-  - velero/velero-restore-helper:v1.12.4
-  - velero/velero:v1.12.4

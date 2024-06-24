@@ -13,6 +13,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: admin/Harbor12345
+      - uses: actions/checkout@v3
       - name: publish kubernetes or custom images
         run: chmod +x ./app && ./app -v 2 --harbor ${{ env.REGISTRY }} --image-repository ${{ env.REPOSITORY }} --user ${{ secrets.HARBOR_NAME }} --password ${{ secrets.HARBOR_PASSWORD }}

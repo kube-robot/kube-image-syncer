@@ -5,8 +5,8 @@ on:
     branches: [ master ]
 
 env:
-  REGISTRY: harbor.zxc.com
-  REPOSITORY: auto-push
+  REGISTRY: registry.cn-hangzhou.aliyuncs.com
+  REPOSITORY: k8sauto
 
 jobs:
   build:

@@ -6,7 +6,7 @@ on:
 
 env:
   REGISTRY: registry.cn-hangzhou.aliyuncs.com
-  REPOSITORY: k8sauto
+  REPOSITORY: docker-k8s-zxc
 
 jobs:
   build:

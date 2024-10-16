@@ -5,8 +5,7 @@ on:
     branches: [ master ]
 
 env:
-  REGISTRY: harbor.cloud.pixiuio.com
-  REPOSITORY: pixiuio
+  REGISTRY: registry.cn-chengdu.aliyuncs.com
 
 jobs:
   build:
@@ -16,4 +15,4 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: publish kubernetes or custom images
-        run: chmod +x ./app && ./app -v 2 --harbor ${{ env.REGISTRY }} --image-repository ${{ env.REPOSITORY }} --user ${{ secrets.HARBOR_NAME }} --password ${{ secrets.HARBOR_PASSWORD }}
+        run: chmod +x ./app && ./app -v 2 --harbor ${{ env.REGISTRY }} --image-repository ${{ secrets.ALIYUN_NAME_SPACE }} --user ${{ secrets.ALIYUN_REGISTRY_USER }} --password ${{ secrets.ALIYUN_REGISTRY_PASSWORD }}
